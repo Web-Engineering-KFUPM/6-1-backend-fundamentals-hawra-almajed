@@ -14,12 +14,14 @@ app.use(cors());
 
 // TODO 5: Create the home route "/"
 app.get('/', (req, res) => {
-    res.send
+    res.send('Welcome to the Home Page');
 })
 
 
 // TODO 6: Create the "/about" route
-res.get('/')
+app.get('/about', (req, res) => {
+    res.send('About this server');
+})
 
 
 // TODO 7: Create the "/student" route
